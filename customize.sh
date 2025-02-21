@@ -4,6 +4,8 @@
 sed -i 's/192.168.1.1/192.168.1.251/g' openwrt/package/base-files/files/bin/config_generate
 
 sed -i 's/\/bin\/ash/\/bin\/bash/' package/base-files/files/etc/passwd
+git clone https://github.com/kenzok8/openwrt-packages.git package/openwrt-packages
+
 
 # Modify default theme
 sed -i 's/luci-theme-bootstrap/luci-theme-argon/g' feeds/luci/collections/luci/Makefile
