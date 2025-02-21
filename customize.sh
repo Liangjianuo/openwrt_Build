@@ -4,7 +4,7 @@
 sed -i 's/192.168.1.1/192.168.1.251/g' openwrt/package/base-files/files/bin/config_generate
 
 # Modify default theme
-#sed -i 's/luci-theme-bootstrap/luci-theme-argon/g' feeds/luci/collections/luci/Makefile
+sed -i 's/luci-theme-bootstrap/luci-theme-argon/g' feeds/luci/collections/luci/Makefile
 
 # Modify hostname
 #sed -i 's/OpenWrt/kenzo/g' openwrt/package/base-files/files/bin/config_generate
