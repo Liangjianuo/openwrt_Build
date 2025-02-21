@@ -3,11 +3,13 @@
 # Modify default IP
 sed -i 's/192.168.1.1/192.168.1.251/g' openwrt/package/base-files/files/bin/config_generate
 
+sed -i 's/\/bin\/ash/\/bin\/bash/' package/base-files/files/etc/passwd
+
 # Modify default theme
 sed -i 's/luci-theme-bootstrap/luci-theme-argon/g' feeds/luci/collections/luci/Makefile
 
 # Modify hostname
-#sed -i 's/OpenWrt/kenzo/g' openwrt/package/base-files/files/bin/config_generate
+sed -i 's/OpenWrt/kenzo/g' openwrt/package/base-files/files/bin/config_generate
 
 #2. Custom settings
 #sed -i 's?zstd$?zstd ucl upx\n$(curdir)/upx/compile := $(curdir)/ucl/compile?g' tools/Makefile
